@@ -40,6 +40,8 @@ app.get('/', (req, res) => {
 <button id="panel">Submit</button>
 <button id="downloads">Downloads</button>
 <button id="clear">clear</button>
+<input id="clear" type="reset">
+
 <script>
 panel.onclick=function(){
 	open('/ariang/#!/settings/rpc/set/wss/'+location.hostname+'/443/jsonrpc/'+btoa(secret.value),'_blank')
