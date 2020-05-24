@@ -35,9 +35,9 @@ app.use(
 app.use('/ariang', express.static(__dirname + '/ariang'))
 app.get('/', (req, res) => {
 	res.send(`
-<label for="secret">Enter Password:</label>
+<center><label for="secret">Enter Password:</label>
 <input id="secret" type="password" placeholder="enter password"> <br> <br>
-<center><button id="panel">Submit</button>
+<button id="panel">Submit</button>
 <button id="downloads">Downloads</button>
 
 <input id="clear" type="reset"></center>
