@@ -35,10 +35,10 @@ app.use(
 app.use('/ariang', express.static(__dirname + '/ariang'))
 app.get('/', (req, res) => {
 	res.send(`
-<label for="secret">Enter your aria2 secret:</label>
-<input id="secret" type="password">
+<label for="secret">Enter Password:</label>
+<input id="secret" type="password"> <br>
 <button id="panel">Go to AriaNg panel</button>
-<button id="downloads">View downloaded files</button>
+<button id="downloads">Downloads</button>
 <script>
 panel.onclick=function(){
 	open('/ariang/#!/settings/rpc/set/wss/'+location.hostname+'/443/jsonrpc/'+btoa(secret.value),'_blank')
