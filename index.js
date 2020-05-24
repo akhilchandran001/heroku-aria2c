@@ -37,8 +37,9 @@ app.get('/', (req, res) => {
 	res.send(`
 <label for="secret">Enter Password:</label>
 <input id="secret" type="password"> <br>
-<button id="panel">Go to AriaNg panel</button>
+<button id="panel">Submit</button>
 <button id="downloads">Downloads</button>
+<button id="clear">clear</button>
 <script>
 panel.onclick=function(){
 	open('/ariang/#!/settings/rpc/set/wss/'+location.hostname+'/443/jsonrpc/'+btoa(secret.value),'_blank')
