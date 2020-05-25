@@ -36,8 +36,8 @@ app.use('/ariang', express.static(__dirname + '/ariang'))
 app.get('/', (req, res) => {
 	res.send(`
 <center>
-<label>Username:</label>
-  <input type="text" name="username" required> <br><br>
+<label for="usr">Username:</label>
+  <input type="text" id="usr" name="username" required> <br><br>
 <label for="secret">Password:</label>
 <input id="secret" type="password" placeholder="enter password"> <br><br>
 
