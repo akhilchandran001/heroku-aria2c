@@ -35,12 +35,25 @@ app.use(
 app.use('/ariang', express.static(__dirname + '/ariang'))
 app.get('/', (req, res) => {
 	res.send(`
-<center><label for="secret">Enter Password:</label>
+<style>
+
+{
+
+  border: 1px solid black;
+
+}
+
+</style>
+<center><label for="secret">Password:</label>
 <input id="secret" type="password" placeholder="enter password"> <br> <br>
 <button id="panel">Submit</button>
-<button id="downloads">Downloads</button>
+<button id="downloads">Downloads</button></center>
 
-<input id="clear" type="reset"></center>
+<label>
+
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+
+      </label>
 
 <script>
 panel.onclick=function(){
