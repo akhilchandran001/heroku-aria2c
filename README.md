@@ -1,6 +1,6 @@
 # Heroku aria2c
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/akhilchandran001/heroku-aria2c)
 
 > Do not overuse it, or your account might be banned by Heroku.
 
